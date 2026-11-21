@@ -76,7 +76,7 @@ jobs:
           php .audit/wp-cli.phar config set WP_SITEURL http://127.0.0.1:53320 --path="$HREFWISE_WP_ROOT"
           test_password=$(php -r 'echo bin2hex(random_bytes(24));')
           php .audit/wp-cli.phar core install --path="$HREFWISE_WP_ROOT" --url=http://127.0.0.1:53320 --title='HrefWise tests' --admin_user=hrefscannertest --admin_email=tests@example.test --admin_password=$test_password --skip-email
-          php .audit/wp-cli.phar plugin install dist/hrefwise-link-record-scanner-1.0.0.zip --activate --path="$HREFWISE_WP_ROOT"
+          php .audit/wp-cli.phar plugin install dist/hrefwise-link-record-scanner-1.0.1.zip --activate --path="$HREFWISE_WP_ROOT"
       - name: Regression checks against the ZIP installation
         run: |
           php tests/check.php

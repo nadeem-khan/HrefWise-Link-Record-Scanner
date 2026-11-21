@@ -4,7 +4,7 @@ Tags: links, internal links, external links, link report, link audit
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ HrefWise scans both internal and external links across selected WordPress conten
 
 Link structure matters for SEO. Internal links help connect content within your website, while external links show which resources it references. Review anchor text, follow attributes, source content and link counts to support SEO audits and identify patterns that need attention.
 
-The readable source, development instructions and contribution workflow are available in the [GitHub repository](https://github.com/nadeem-khan/HrefWise-Link-Record-Scanner). For ordinary bugs, use its issue tracker; report vulnerabilities privately through the repository's Security tab.
+HrefWise is open source. Explore the code, development instructions, and contribution guidelines on [GitHub](https://github.com/nadeem-khan/HrefWise-Link-Record-Scanner). For ordinary bugs, use its issue tracker; report vulnerabilities privately through the repository's Security tab.
 
 Domain and page reports show where links are concentrated. Filter individual link records and export CSV reports to keep track of your site's linking structure as content changes. Manage settings, scans, reports and link listings under HrefWise in the WordPress admin menu.
 
@@ -108,6 +108,9 @@ Settings, scan state and reports belong to each site. Configure and scan each si
 3. Internal Link Report showing the total number of links to each page on your site.
 
 == Changelog ==
+
+= 1.0.1 =
+* Align the Export All icon and clarify the open-source description.
 
 = 1.0.0 =
 * First public release with complete and quick scans of selected saved content.

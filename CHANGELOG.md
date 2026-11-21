@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.0.0 (unreleased)
+## 1.0.1
+
+- Align the Export All icon and clarify the open-source description.
+
+## 1.0.0
 
 - First public release with resumable complete and quick scans of selected saved content.
 - Provide grouped internal/external reports, filtered occurrence listings, progress estimates and CSV exports with spreadsheet-formula protection.

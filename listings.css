@@ -82,8 +82,13 @@
 }
 
 .hrefwise-export .dashicons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 1;
 }
 
 :is(.post-type-hrefwise_ext_link, .post-type-hrefwise_int_link) .tablenav.top .tablenav-pages {

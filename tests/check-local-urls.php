@@ -213,7 +213,7 @@ if ( $export_params['hrefwise_group'] !== $fixture_group || hrefwise_group_filte
 unset( $_GET['hrefwise_group'] );
 
 $plugin_data = get_plugin_data( dirname( __DIR__ ) . '/hrefwise.php', false );
-if ( 'HrefWise: Link Record Scanner' !== $plugin_data['Name'] || 'Nadeem Khan' !== $plugin_data['Author'] || 'hrefwise-link-record-scanner' !== $plugin_data['TextDomain'] || '1.0.0' !== $plugin_data['Version'] ) {
+if ( 'HrefWise: Link Record Scanner' !== $plugin_data['Name'] || 'Nadeem Khan' !== $plugin_data['Author'] || 'hrefwise-link-record-scanner' !== $plugin_data['TextDomain'] || '1.0.1' !== $plugin_data['Version'] ) {
 	throw new RuntimeException( 'Plugin release metadata is incorrect.' );
 }
 

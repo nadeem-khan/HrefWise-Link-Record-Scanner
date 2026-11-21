@@ -5,7 +5,7 @@
  * Plugin Name: HrefWise: Link Record Scanner
  * Plugin URI: https://github.com/nadeem-khan/HrefWise-Link-Record-Scanner
  * Description: Scan internal and external links, review anchor text and follow attributes, and export filtered link reports.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Nadeem Khan
  * Author URI: https://profiles.wordpress.org/chillopedia/
  * Requires at least: 6.2
@@ -110,12 +110,12 @@ function hrefwise_admin_menu() {
 function hrefwise_admin_scripts( $hook_suffix ) {
 	$screen = get_current_screen();
 	if ( 'edit.php' === $hook_suffix && $screen && in_array( $screen->post_type, array( 'hrefwise_ext_link', 'hrefwise_int_link' ), true ) ) {
-		wp_enqueue_style( 'hrefwise-listings', plugins_url( 'listings.css', __FILE__ ), array(), '1.0.0' );
+		wp_enqueue_style( 'hrefwise-listings', plugins_url( 'listings.css', __FILE__ ), array(), '1.0.1' );
 	}
 	if ( strpos( $hook_suffix, '_page_hrefwise-settings' ) === false ) {
 		return;
 	}
-	wp_enqueue_script( 'hrefwise-admin', plugins_url( 'admin.js', __FILE__ ), array( 'jquery', 'wp-i18n' ), '1.0.0', true );
+	wp_enqueue_script( 'hrefwise-admin', plugins_url( 'admin.js', __FILE__ ), array( 'jquery', 'wp-i18n' ), '1.0.1', true );
 	wp_set_script_translations( 'hrefwise-admin', 'hrefwise-link-record-scanner' );
 }
 

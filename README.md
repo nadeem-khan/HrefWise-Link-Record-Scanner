@@ -21,7 +21,7 @@ WordPress **6.2+**, PHP **7.4+**, and the PHP **DOM/libxml** extension. No other
 
 ## Installation and usage
 
-Build or obtain the reviewed `hrefwise-link-record-scanner-1.0.0.zip`. In a test site, open **Plugins → Add New Plugin → Upload Plugin**, install the ZIP and activate **HrefWise**. Alternatively, extract its `hrefwise-link-record-scanner` folder into `wp-content/plugins`. GitHub's **Download ZIP** is a development source archive; build the installable plugin ZIP before uploading it to WordPress. Keep the installed folder named `hrefwise-link-record-scanner`.
+Build or obtain the reviewed `hrefwise-link-record-scanner-1.0.1.zip`. In a test site, open **Plugins → Add New Plugin → Upload Plugin**, install the ZIP and activate **HrefWise**. Alternatively, extract its `hrefwise-link-record-scanner` folder into `wp-content/plugins`. GitHub's **Download ZIP** is a development source archive; build the installable plugin ZIP before uploading it to WordPress. Keep the installed folder named `hrefwise-link-record-scanner`.
 
 Before upgrading a private development build, note any additional internal domains. After upgrading, reload Settings, save those domains again and run a complete scan. This release uses a new internal-domain option name; existing link records and selected content types are retained.
 
@@ -81,7 +81,7 @@ For multisite isolation coverage, create a separate marked disposable network wi
 python scripts/build.py
 ```
 
-Python 3.9+ and its standard library are sufficient. There is no compilation or minification step. The build uses an explicit runtime-file allowlist, sorted paths, fixed ZIP timestamps and file permissions, then verifies archive contents, CRC integrity and source bytes. It creates `dist/hrefwise-link-record-scanner-1.0.0.zip` and a SHA-256 file. Store reviewed submission ZIPs and checksum files in the Git-ignored `release/` folder. Repeated builds from identical source bytes and toolchain are identical. `.distignore` describes the exclusion policy; the allowlist in the build script enforces it and must be updated when adding runtime files. All deployed PHP, JS and CSS are readable source. From `dist`, verify the ZIP checksum with `sha256sum --check hrefwise-link-record-scanner-1.0.0.zip.sha256`; in PowerShell, compare `(Get-FileHash dist/hrefwise-link-record-scanner-1.0.0.zip -Algorithm SHA256).Hash` with the sidecar file.
+Python 3.9+ and its standard library are sufficient. There is no compilation or minification step. The build uses an explicit runtime-file allowlist, sorted paths, fixed ZIP timestamps and file permissions, then verifies archive contents, CRC integrity and source bytes. It creates `dist/hrefwise-link-record-scanner-1.0.1.zip` and a SHA-256 file. Store reviewed submission ZIPs and checksum files in the Git-ignored `release/` folder. Repeated builds from identical source bytes and toolchain are identical. `.distignore` describes the exclusion policy; the allowlist in the build script enforces it and must be updated when adding runtime files. All deployed PHP, JS and CSS are readable source. From `dist`, verify the ZIP checksum with `sha256sum --check hrefwise-link-record-scanner-1.0.1.zip.sha256`; in PowerShell, compare `(Get-FileHash dist/hrefwise-link-record-scanner-1.0.1.zip -Algorithm SHA256).Hash` with the sidecar file.
 
 ## Contributing, security and license
 
@@ -89,4 +89,4 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change and [SECURITY.
 
 ## Releases
 
-[GitHub](https://github.com/nadeem-khan/HrefWise-Link-Record-Scanner) hosts the source project. WordPress.org will host reviewed plugin releases after approval. Version **1.0.0** is the first public release candidate, and `hrefwise-link-record-scanner` is the intended slug, subject to directory assignment. GitHub installations have no plugin-provided automatic updater; install reviewed updates manually until a WordPress.org release is available. Publication, initial submission and every SVN release require explicit maintainer approval; no workflow deploys automatically. Follow [the release checklist](docs/WORDPRESS_ORG_RELEASE_CHECKLIST.md) and [the release procedure](docs/RELEASING.md).
+[GitHub](https://github.com/nadeem-khan/HrefWise-Link-Record-Scanner) hosts the source project. WordPress.org hosts plugin releases. GitHub installations have no plugin-provided automatic updater; install reviewed updates manually. Publication, initial submission and every SVN release require explicit maintainer approval; no workflow deploys automatically. Follow [the release checklist](docs/WORDPRESS_ORG_RELEASE_CHECKLIST.md) and [the release procedure](docs/RELEASING.md).
