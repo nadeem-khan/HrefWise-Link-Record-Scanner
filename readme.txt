@@ -101,6 +101,12 @@ Deactivation and plugin deletion retain them. There is no built-in purge control
 
 Settings, scan state and reports belong to each site. Configure and scan each site separately; network activation does not create a network-wide scan or report.
 
+== Screenshots ==
+
+1. External link records with anchor text, follow type, source post and content type, plus filters and CSV export.
+2. External Link Report showing the total number of links to each domain.
+3. Internal Link Report showing the total number of links to each page on your site.
+
 == Changelog ==
 
 = 1.0.0 =
